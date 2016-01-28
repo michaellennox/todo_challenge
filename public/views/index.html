@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="AngularTodo">
 <head>
   <meta charset="UTF-8">
-  <title>ToDo List</title>
+  <title>Angular Todo List</title>
+
+  <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <script src="../libs/jquery/dist/jquery.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../libs/angular/angular.js"></script>
+  <script src="../libs/angular-resource/angular-resource.js"></script>
+  <script src="../libs/angular-route/angular-route.js"></script>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/routes.js"></script>
 </head>
 <body>
-  Test Page
+  <header>
+    <h1 class="text-center">Angular Todo <small>By Michael</small></h1>
+  </header>
+  <ng-view></ng-view>
 </body>
 </html>

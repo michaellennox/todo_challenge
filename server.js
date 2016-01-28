@@ -4,8 +4,8 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 
-var db = require('./config/db.js')
-var routes = require('./app/routes.js')
+var db = require('./config/db.js');
+var routes = require('./app/routes.js');
 
 var port = process.env.PORT || 8080;
 
