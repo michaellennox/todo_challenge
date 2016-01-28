@@ -1,4 +1,4 @@
-angularTodo.config(['$routeProvider',
+angularToDo.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
       .when('/', {

@@ -13,7 +13,7 @@ describe('ToDo Landing Page', function() {
     it('a user is prompted to continue an old list', function() {
       var oldListInput = element(by.css('input'));
 
-      expect(oldListInput.getAttribute('placeholder')).toEqual('Continue an Old List')
+      expect(oldListInput.getAttribute('placeholder')).toEqual('Continue an Old List');
     });
   });
 });

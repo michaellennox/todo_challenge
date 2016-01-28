@@ -1,1 +1,1 @@
-var angularTodo = angular.module('AngularTodo', ['ngResource', 'ngRoute']);
+var angularToDo = angular.module('AngularToDo', ['ngResource', 'ngRoute']);
