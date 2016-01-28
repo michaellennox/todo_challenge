@@ -1,0 +1,11 @@
+.landing {
+  min-height: 75vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.landing button {
+  display: block;
+  margin: 0 auto 50px auto;
+}
