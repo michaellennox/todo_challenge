@@ -1,14 +1,23 @@
 <main class="list" ng-controller="ListPageController as listPageCtrl">
   <div class="container text-center">
     <section class="row">
-      <h2>ToDo</h2>
-      <ul class="todo-group">
+      <h2>ToDo List</h2>
+      <ul class="todo-group list-group">
         <li class="todo list-group-item" ng-repeat="todo in listPageCtrl.todos">
         </li>
       </ul>
     </section>
 
     <section class="row">
+      <form class="form-inline" name="todo-input-form" ng-submit="listPageCtrl.addTodo()">
+        <div class="input-group input-group-lg">
+          <input class="form-control text-center" placeholder="Add a ToDo"
+                 type="text" ng-model="listPageCtrl.newToDo" required>
+          <span class="input-group-btn">
+            <button class="btn btn-success"><i class="glyphicon glyphicon-plus"></i></button>
+          </span>
+        </div>
+      </form>
     </section>
   </div>
 </main>

@@ -1,5 +1,7 @@
 describe('LandingPageController', function() {
-  beforeEach(function() { module('AngularToDo') });
+  var ctrl;
+
+  beforeEach(module('AngularToDo'));
 
   beforeEach(inject(function($controller) {
     ctrl = $controller('LandingPageController');
