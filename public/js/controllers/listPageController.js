@@ -3,7 +3,7 @@ angularToDo.controller('ListPageController', [function() {
 
   self.todos = [];
 
-  self.addToDo = function(todo) {
-    self.todos.push(todo);
+  self.addToDo = function() {
+    self.todos.push({description: self.newToDo});
   };
 }]);

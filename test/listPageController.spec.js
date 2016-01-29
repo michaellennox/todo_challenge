@@ -13,8 +13,9 @@ describe('ListPageController', function() {
 
   describe('#addToDo()', function() {
     it('adds a todo to the todos', function() {
-      ctrl.addToDo('Get a cat');
-      expect(ctrl.todos).toContain('Get a cat');
+      ctrl.newToDo = 'Get a cat';
+      ctrl.addToDo();
+      expect(ctrl.todos[0].description).toEqual('Get a cat');
     });
   });
 });
