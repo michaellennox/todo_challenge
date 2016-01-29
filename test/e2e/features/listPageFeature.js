@@ -5,9 +5,9 @@ describe('ToDo List Page', function() {
     });
 
     it('a user is able to enter a new todo', function() {
-      var newToDoInput = element(by.model('listPageCtrl.newToDo'));
+      var newToDoInput = element(by.model('listPageCtrl.newToDoText'));
       var newToDoButton = element(by.css('.new-todo-form button'));
-      var todoList = element.all(by.repeater('todo in listPageCtrl.todos'));
+      var todoList = element.all(by.repeater('todo in listPageCtrl.todoList'));
 
       newToDoInput.sendKeys('Find a cat');
       newToDoButton.click();
