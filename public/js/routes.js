@@ -2,10 +2,10 @@ angularToDo.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: '../views/templates/landing.html'
+        templateUrl: '../views/partials/landing.html'
       })
-      .when('/list/:list_id', {
-        templateUrl: '../views/templates/list.html'
+      .when('/lists/:list_id', {
+        templateUrl: '../views/partials/list.html'
       })
       .otherwise({
         redirectTo: '/'
