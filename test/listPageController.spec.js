@@ -1,21 +1,26 @@
 describe('ListPageController', function() {
-  var ctrl;
+  var ctrl, todosFactoryMock;
 
-  beforeEach(module('AngularToDo'));
+  beforeEach(function() {
+    todosFactoryMock = jasmine.createSpyObj('todos', ['newToDo', 'list']);
+    module('AngularToDo', {
+      todos: todosFactoryMock
+    });
+  });
 
   beforeEach(inject(function($controller) {
     ctrl = $controller('ListPageController');
   }));
 
-  it('initializes with no todos', function() {
-    expect(ctrl.todos).toEqual([]);
+  it('initializes with a todoList equal to todos factory list', function() {
+    expect(ctrl.todoList).toEqual(todosFactoryMock.list);
   });
 
   describe('#addToDo()', function() {
-    it('adds a todo to the todos', function() {
-      ctrl.newToDo = 'Get a cat';
+    it('calls newToDo() on todos factory with the newToDo model data', function() {
+      ctrl.newToDoText = 'Get a cat';
       ctrl.addToDo();
-      expect(ctrl.todos[0].description).toEqual('Get a cat');
+      expect(todosFactoryMock.newToDo).toHaveBeenCalledWith('Get a cat');
     });
   });
 });

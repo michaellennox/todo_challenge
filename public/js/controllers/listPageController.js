@@ -1,9 +1,9 @@
-angularToDo.controller('ListPageController', [function() {
+angularToDo.controller('ListPageController', ['todos', function(todos) {
   var self = this;
 
-  self.todos = [];
+  self.todoList = todos.list;
 
   self.addToDo = function() {
-    self.todos.push({description: self.newToDo});
+    todos.newToDo(self.newToDoText);
   };
 }]);
