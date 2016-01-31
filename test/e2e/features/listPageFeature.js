@@ -13,6 +13,7 @@ describe('ToDo List Page', function() {
       newToDoButton.click();
 
       expect(todoList.get(0).getText()).toContain('Find a cat');
+      expect(newToDoInput.getAttribute('value')).toEqual('');
     });
   });
 });

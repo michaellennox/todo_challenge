@@ -22,5 +22,11 @@ describe('ListPageController', function() {
       ctrl.addToDo();
       expect(todosFactoryMock.newToDo).toHaveBeenCalledWith('Get a cat');
     });
+
+    it('resets the newToDoText model to empty', function() {
+      ctrl.newToDoText = 'this should vanish';
+      ctrl.addToDo();
+      expect(ctrl.newToDoText).toEqual('');
+    });
   });
 });

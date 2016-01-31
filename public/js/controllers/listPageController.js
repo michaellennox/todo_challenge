@@ -5,5 +5,6 @@ angularToDo.controller('ListPageController', ['todos', function(todos) {
 
   self.addToDo = function() {
     todos.newToDo(self.newToDoText);
+    self.newToDoText = '';
   };
 }]);
