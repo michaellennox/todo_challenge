@@ -11,5 +11,10 @@ describe('factory: todos', function() {
     expect(todosFactory.list).toEqual([]);
   });
 
-  // describe()
-})
+  describe('#newToDo()', function() {
+    it('adds a new todo to the list', function() {
+      todosFactory.newToDo('this should have been added');
+      expect(todosFactory.list[0].text).toEqual('this should have been added');
+    });
+  });
+});

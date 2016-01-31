@@ -17,3 +17,7 @@ section {
 .todo button {
   margin-left: 3px;
 }
+
+.strike {
+    text-decoration: line-through;
+}

@@ -4,7 +4,7 @@ angularToDo.factory('todos', function() {
   todos.list = [];
 
   todos.newToDo = function(todoText) {
-    todos.list.push({text: todoText})
+    todos.list.push({text: todoText, complete: false, editThis: false});
   };
 
   return todos;

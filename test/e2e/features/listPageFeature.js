@@ -34,5 +34,21 @@ describe('ToDo List Page', function() {
       expect(todoList.get(0).getText()).toContain('This has now been edited');
       expect(todoList.get(0).getText()).not.toContain('I\'m going to edit you');
     });
+
+    it('a user can mark an item complete', function() {
+      newToDoInput.sendKeys('Something to complete');
+      newToDoButton.click();
+
+      var completeToDoButton = element(by.css('.btn-danger'));
+
+      completeToDoButton.click();
+
+      var toDoText = element(by.binding('todo.text'));
+      var successButton = element(by.css('.glyphicon-ok'));
+
+      expect(toDoText.getAttribute('class')).toContain('strike');
+      expect(successButton.isDisplayed()).toBeTruthy();
+      expect(completeToDoButton.isDisplayed()).toBeFalsy();
+    });
   });
 });
