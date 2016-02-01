@@ -17,4 +17,16 @@ describe('factory: todos', function() {
       expect(todosFactory.list[0].text).toEqual('this should have been added');
     });
   });
+
+  describe('#removeToDo()', function() {
+    it('removes a todo from the list', function() {
+      todosFactory.newToDo('this should be removed');
+      todosFactory.newToDo('but not this');
+
+      var todoToDelete = todosFactory.list[0];
+      todosFactory.removeToDo(todoToDelete);
+      
+      expect(todosFactory.list).not.toContain(todoToDelete);
+    });
+  });
 });

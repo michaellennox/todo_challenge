@@ -2,7 +2,7 @@ describe('ListPageController', function() {
   var ctrl, todosFactoryMock;
 
   beforeEach(function() {
-    todosFactoryMock = jasmine.createSpyObj('todos', ['newToDo', 'list']);
+    todosFactoryMock = jasmine.createSpyObj('todos', ['newToDo', 'list', 'removeToDo']);
     module('AngularToDo', {
       todos: todosFactoryMock
     });
@@ -29,4 +29,11 @@ describe('ListPageController', function() {
       expect(ctrl.newToDoText).toEqual('');
     });
   });
+
+  // describe('#deleteToDo()', function() {
+  //   it('calls removeToDo() on todos factory with the todo as arg', function() {
+  //     var fakeToDo = 'fake todo'
+  //
+  //   });
+  // });
 });

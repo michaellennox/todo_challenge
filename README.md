@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/makersacademy/todo_challenge.svg?branch=master)](https://travis-ci.org/makersacademy/todo_challenge)
-
 #ToDo Challenge
 
 This is my solution for the [ToDo Challenge](https://github.com/michaellennox/todo_challenge/blob/master/MAKERS_README.md) carried out at the end of my eighth week at Makers' Academy. It's a basic todo list built in Angular.
@@ -35,8 +33,6 @@ Visit `http://localhost:8080/` and enjoy your ToDo list
 
 
 ##Brief
-
-## Challenge
 
 ![Todo mockup](https://makersacademy.mybalsamiq.com/mockups/2914603.png?key=afabb09aef2901a2732515ae4349c1ec0458294b)
 

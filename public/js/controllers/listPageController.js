@@ -7,4 +7,8 @@ angularToDo.controller('ListPageController', ['todos', function(todos) {
     todos.newToDo(self.newToDoText);
     self.newToDoText = '';
   };
+
+  self.deleteToDo = function(todo) {
+    todos.removeToDo(todo);
+  };
 }]);
