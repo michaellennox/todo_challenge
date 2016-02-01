@@ -17,6 +17,12 @@ $ git clone git@github.com:michaellennox/todo_challenge.git
 $ cd todo_challenge
 ```
 
+Install all dependencies
+```
+$ npm install
+$ bower install
+```
+
 Run the app
 
 ```

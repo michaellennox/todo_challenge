@@ -50,5 +50,21 @@ describe('ToDo List Page', function() {
       expect(successButton.isDisplayed()).toBeTruthy();
       expect(completeToDoButton.isDisplayed()).toBeFalsy();
     });
+
+    it('a user should be able to view how many tasks are in their list', function() {
+      var listLength = element(by.css('.list-counter'));
+
+      expect(listLength.getText()).toEqual('0 items');
+
+      newToDoInput.sendKeys('A random item');
+      newToDoButton.click();
+
+      expect(listLength.getText()).toEqual('1 item');
+
+      newToDoInput.sendKeys('Another random item');
+      newToDoButton.click();
+
+      expect(listLength.getText()).toEqual('2 items');
+    });
   });
 });
