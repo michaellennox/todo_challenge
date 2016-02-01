@@ -1,34 +1,14 @@
-[![Build Status](https://travis-ci.org/makersacademy/todo_challenge.svg?branch=master)](https://travis-ci.org/makersacademy/todo_challenge)
+# Todo Challenge
 
-#ToDo Challenge
+* Deadline: submit completed pull request by 9am on Monday
+* You may use whatever level of JavaScript you feel comfortable with - pure JS, jQuery, Angular, or whatever weird and wonderful framework you want to try. Extra points for DogeScript
 
-This is my solution for the [ToDo Challenge](https://github.com/michaellennox/todo_challenge/blob/master/MAKERS_README.md) carried out at the end of my eighth week at Makers' Academy. It's a basic todo list built in Angular.
+Steps
+-------
 
-##How I worked
-
-I aimed to complete this challenge in a test driven manner. I wrote automated acceptance tests with protractor to represent user actions through the application and automated unit tests with Karma.
-
-##Installation Instructions
-
-Clone down from github and cd into the directory
-
-```
-$ git clone git@github.com:michaellennox/todo_challenge.git
-$ cd todo_challenge
-```
-
-Run the app
-
-```
-$ npm start
-```
-
-Visit `http://localhost:8080/` and enjoy your ToDo list
-
-##Usage Instructions
-
-
-##Brief
+1. Fill out your learning plan self review for the week: https://github.com/makersacademy/learning_plan
+2. Fork this repo, and clone to your local machine
+3. Complete the following challenge:
 
 ## Challenge
 
@@ -81,3 +61,13 @@ Don't worry about deployment, and make sure you read the CONTRIBUTING.md when su
 * Deploy the app
 * Create a persistance layer (e.g. MongoDB), or use LocalStorage or the filesystem through Node
 * Make it look purdy (CSS) - try a framework like Bootstrap or Foundation
+
+## CI
+
+Read the `.travis.yml` if any of the steps below don't make sense!
+
+* Make sure you have set up `npm test` in your `package.json` so that it runs your Karma tests
+* Make sure you have your Protractor config file at `e2e/conf.js`
+* Make sure `npm start` spins up whatever serves up your app - `http-server`, Sinatra or Node
+
+Good luck!
